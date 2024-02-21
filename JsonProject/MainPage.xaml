@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="JsonProject.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout Padding="20">
+        <Label Text="Name" />
+        <Entry x:Name="nameEntry" Placeholder="Enter your name" />
+
+        <Label Text="Surname" />
+        <Entry x:Name="surnameEntry" Placeholder="Enter your surname" />
+
+        <Label Text="Email" />
+        <Entry x:Name="emailEntry" Placeholder="Enter your email address" />
+
+        <Label Text="Bio" />
+        <Editor x:Name="bioEditor" Placeholder="Enter a short bio" HeightRequest="100" />
+
+        <Button Text="Save" Clicked="SaveButton_Clicked" HorizontalOptions="Center" />
+        <Button Text="Load Profile" Clicked="LoadProfileButton_Clicked" HorizontalOptions="Center" />
+
+        <!-- Add any additional UI elements here as needed -->
+
+    </StackLayout>
+</ContentPage>
